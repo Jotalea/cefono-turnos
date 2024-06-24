@@ -1,0 +1,76 @@
+// Todos los datos fueron reemplazados por datos ficticios
+// El uso de comentarios estará ausente en versiones estables
+
+{
+	"profesionales": [
+		{
+      "id": 1
+			"nombre": "María Luz",
+			"especialidad": "fonoaudiología"
+		},
+		{
+      "id": 2
+			"nombre": "Priscila Pérez",
+			"especialidad": "psicología"
+		}
+	],
+	"pacientes": [
+		{
+			"id": 243
+			"nombre": "Tomás González",
+			"obra_social": "part", // Paciente particular
+			"tratamientos": [
+        "fonoaudiología"
+      ]
+		},
+    {
+			"id": 244
+			"nombre": "Matías García",
+			"obra_social": "ioma", // Obra social
+			"tratamientos": [
+        "fonoaudiología",
+        "psicología"
+      ]
+		},
+	],
+	"turnos": [
+		{
+      // Datos para el backend
+			"id": 214832,
+			"paciente": 243,
+			"unix": 1719259200,
+			"presente": 1,
+			"cancelado": 0,
+			"cobrar": 7000,
+			"pagado": 7000,
+      // Datos para el frontend
+			"hora": "17:00",
+			"dia": "Lunes",
+			"fecha": "24/6"
+		},
+    {
+			"id": 214833,
+			"paciente": 244,
+			"unix": 1719864000,
+			"presente": 1,
+			"cancelado": 0,
+			"cobrar": 0,
+			"pagado": 0,
+			"hora": "17:00",
+			"dia": "Lunes",
+			"fecha": "1/7"
+		},
+		{
+			"id": 214834,
+			"paciente": 243,
+			"unix": 1719865800,
+			"presente": 0,
+			"cancelado": 1,
+			"cobrar": 7500,
+			"pagado": 0,
+			"hora": "17:30",
+			"dia": "Lunes",
+			"fecha": "1/7"
+		}
+	]
+}
